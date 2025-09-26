@@ -1,0 +1,25 @@
+{
+  "name": "my-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.x.x",
+    "vite": "^5.x.x"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "body-parser": "^2.2.0",
+    "contentful": "^11.7.18",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "react-router-dom": "^6.30.1"
+  }
+}

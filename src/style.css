@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #36353500;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  
+}
+
+.navbar-container {
+  background-color: #131111;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center; /* centrerar hela nav-innehållet */
+
+  
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* centrerar länkarna */
+  align-items: center;
+  gap: 2rem; /* lite mer spacing mellan länkarna */
+  padding-bottom: 50px; /* lägger till lite padding under nav för att skapa luft */
+  height: 100px; /* sätter en fast höjd på nav */
+}
+
+
+nav a {
+  color: rgb(12, 11, 11); /* byt till vitt för kontrast mot mörk bakgrund */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 2px solid white;
+  font-size: 1.1rem;
+}
+
+
+.about-us {
+  display: block;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Länk för företagsnamn */
+.about-us a {
+  font-size: 1.5rem;        /* lite större för mer fokus */
+  font-weight: 700;
+  color: #0078ff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.about-us a:hover {
+  color: #0056b3;           /* mörkare blå vid hover */
+}
+
+/* Rubrik */
+.about-us h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  line-height: 1.3;
+}
+
+/* Brödtext */
+.about-us p {
+  font-size: 1.125rem;      /* 18px */
+  line-height: 1.6;
+  margin: 0.8rem 0;
+  color: #555;
+}
+
+/* Fet text */
+.about-us p strong {
+  color: #0078ff;
+  font-weight: 600;
+}
+
+/* Eventuell container för bättre spacing */
+.about-us {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+  .opening-hours {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.opening-hours h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.opening-hours {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.opening-hours h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.hours-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background 0.2s ease;
+}
+
+.hour-row:nth-child(even):not(.closed) {
+  background: #f5f5f5;
+}
+
+.hour-row.closed {
+  background: #e5e5e5;
+  color: #888;
+  font-style: italic;
+}
+
+.day {
+  font-weight: 500;
+}
+
+.time {
+  font-weight: 400;
+}
+
+
+
+/* Container för alla kort */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 🔹 Ändrat från 250px */
+  gap: 1.5rem;
+  max-width: 1200px; /* 🔹 Ökat från 1000px för att ge mer utrymme */
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+
+/* Själva kortet */
+.image-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+/* Effekt vid hover */
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Om kortet innehåller en bild */
+.image-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+
+.image-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.image-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.image-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+  color: #fff;
+}
+
+.image-card__overlay h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.image-card__overlay p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer {
+  background: #242424;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-section {
+  margin-bottom: 1.5rem;
+}
+
+.footer a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.tider-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.tider-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.tider-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tider-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.tider-list li:last-child {
+  border-bottom: none;
+}
+
+.tider-list li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+
+
+/* StrapiProducts.css */
+
+.products-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.products-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+
+/* AboutUs.css */
+
+.about-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+   font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+ 
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
