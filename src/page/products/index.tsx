@@ -1,18 +1,16 @@
-import Footer from "../../components/footer";
+import React from "react";
 import CardButton from "../../components/cardButton";
-import Cards from "../../components/cards"; 
-import Image from "../../components/image";  
-import StrapiProducts from "../../components/strapiProducts";
+import Button from "../../components/button";
+import Info from "../../components/info";
 
 
-
-function Products() {
+export default function products() {
   return (
     <div>
-      <StrapiProducts />
+      <Info />
+      <Button />
+      
       
     </div>
   );
 }
-
-export default Products;
