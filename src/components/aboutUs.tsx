@@ -5,14 +5,18 @@ export default function AboutUs() {
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
+  
+  // If using Vite:
+    const STRAPI_API_TOKEN = import.meta.env.VITE_STRAPI_API_TOKEN;
+  
+  // If using Create React App, use:
+  // const STRAPI_API_TOKEN = process.env.REACT_APP_STRAPI_API_TOKEN;
+ 
   useEffect(() => {
     async function fetchAbout() {
       try {
         const res = await fetch("http://192.168.1.70:1337/api/about-us", {
-          headers: {
-            Authorization: `Bearer 631d2d228b582d0dd0ea661ee682bba324880dc20f7ee9704a31b18ed0079362eac8954534d6f83028735d0a269ec511b867b613caf2e842fb789d307752ef622b7fa15095323c153ea55772fff254dfabfea90784311cd6b5f33feb9ea7f60f08cb07026dff6d20572d864f1563109a69b64be14fde8d631de993d9f9909f6c`,
-          },
+          headers: { Authorization: `Bearer ${STRAPI_API_TOKEN}` },
         });
 
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
