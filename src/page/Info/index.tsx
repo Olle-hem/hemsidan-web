@@ -16,7 +16,7 @@ function InfoPage() {
   return (
     <div>
       
-      <Card />
+     
       <Kontakter />
       
       
