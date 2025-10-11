@@ -5,7 +5,7 @@ export default function StripeButton() {
   return (
     <div className="button-container">
       <a
-        href="https://buy.stripe.com/test_8x2dR9aCz9IU2libEBbEA06"
+        href="https://buy.stripe.com/test_7sY00jcZnbs67igdNreUU00"
         target="_blank"
         rel="noopener noreferrer"
         className="stripe-button"

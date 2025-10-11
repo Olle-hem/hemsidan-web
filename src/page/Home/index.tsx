@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       style={{
         position: "relative",
         width: "100vw",
-        minHeight: "200vh", // sidan blir längre så att scroll-trigger triggas
+        minHeight: "220vh", // sidan blir längre så att scroll-trigger triggas
         overflow: "hidden",
         backgroundColor: "#000", // mörk bakgrund
         color: "#fff",

@@ -2,8 +2,8 @@ function Kontakter() {
   return (
     <div className="kontakter">
       <ul>
-        <li>Email: exempel@exempel.com</li>
-        <li>Telefon: 012-3456789</li>
+        
+        <li>Telefon: 070-283-13-18</li>
       </ul>
     </div>
   );
