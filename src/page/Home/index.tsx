@@ -70,11 +70,12 @@ const Home: React.FC = () => {
           marginTop: "30vh",
           display: "flex",
           justifyContent: "center",
+          
         }}
       >
         <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
-          <h2>Lorem ipsum dolor sit.</h2>
-          <p>Lorem ipsum dolor sit.</p>
+          <h2>Gå till poducts för betalning</h2>
+        
         </SpotlightCard>
       </div>
 
@@ -95,10 +96,8 @@ const Home: React.FC = () => {
           rotationEnd="bottom bottom"
           wordAnimationEnd="bottom center"
           startOffset="top 80%" // startar animationen när elementets topp når 80% av viewport
-        >
-          When does a man die? When he is hit by a bullet? No! When he suffers a
-          disease? No! When he ate a soup made out of a poisonous mushroom? No!
-          A man dies when he is forgotten! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum omnis ipsum ad temporibus quisquam dicta veniam officiis pariatur, ratione error neque delectus velit inventore repellendus at cupiditate asperiores quae!
+        >Vi hjälper småföretag att växa online genom moderna, prisvärda och professionella hemsidor.
+Låt oss bygga en webbplats som lyfter ditt varumärke och lockar fler kunder. 
         </ScrollReveal>
       </div>
     </div>
